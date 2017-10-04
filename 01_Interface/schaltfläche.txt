@@ -1,0 +1,5 @@
+Eine Schaltfläche beziehungsweise Taste, auch (englisch) Button ist
+ ein häufig verwendetes Steuerelement grafischer Benutzeroberflächen, 
+das dem Benutzer ermöglicht, eine zugeordnete Funktion auszulösen.
+
+in der realen welt ein Knopf.

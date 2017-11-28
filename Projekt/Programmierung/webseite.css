@@ -1,0 +1,975 @@
+
+body {
+    background-image: url("hintergrund.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 130%;
+} 
+
+
+h1{
+	font-size:100px;
+	color:black;
+	text-shadow: 3px 3px 0px #fff, 8px 8px 0px #ccc;
+	margin-top:0px;
+}
+
+h3{
+	font-size:30px;
+	color:black;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+/*Hauptsite*/
+
+#buch{
+	width: 500px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+}
+
+
+#button1 {
+	background:none;
+    border:none;
+    outline:none;
+    display:block;
+    height:150px;
+    width:500px;
+    cursor:pointer;
+    margin-left: 380px;
+	position: relative;
+	font-size: 0px;
+	font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .1em;
+    color: white;
+    text-shadow: 0 0 5px white,
+                 0 0 10px white,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+
+
+#button2 {
+	background:none;
+    border:none;
+    outline:none;
+    display:block;
+    height:100px;
+    width:500px;
+    cursor:pointer;
+    margin-left: 380px;
+	position: absolute;
+	font-size: 0px;
+}
+
+
+#button3 {
+	background:none;
+    border:none;
+    outline:none;
+    display:block;
+    height:450px;
+    width:500px;
+    cursor:pointer;
+    margin-left: 380px;
+	margin-top: 100px;
+	position: absolute;
+	font-size: 0px;
+	
+}
+
+
+#button1 span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+#button1 span:after {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#button1:hover span {
+	padding-right: 25px;
+	text-align:center;
+	font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .1em;
+    color: white;
+    text-shadow: 0 0 5px white,
+                 0 0 10px white,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+
+#button1:hover span:after {
+	opacity: 1;
+	right: 0;
+  
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+
+#button2:hover {
+	animation: bounce 1s;
+	font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .1em;
+    color: white;
+    text-shadow: 0 0 5px white,
+                 0 0 10px white,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+
+
+#button3:hover {
+    background-color: none;
+    color: black;
+	
+	font-size:60px;
+	font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .1em;
+    color: white;
+    text-shadow: 0 0 5px white,
+                 0 0 10px white,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+
+
+.popup {
+   
+    display: inline-block;
+	background:beige;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	left: 50%;
+    margin-left: -250px;
+	bottom: 40px;
+	position: absolute;
+	font-size: 20px;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -50px;
+	text-shadow: none;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+	text-shadow: none;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.popup:hover
+{
+	background-color:#EFF1F3;
+    color: black;
+    text-shadow: 0 0 5px yellow,
+                 0 0 10px yellow,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+   
+
+.popup2 {
+    display: inline-block;
+	background:beige;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	left: 50%;
+    margin-left: -150px;
+	bottom: 40px;
+	position: absolute;
+	font-size: 20px;
+}
+
+.popup2 .popuptext2 {
+    visibility: hidden;
+    width: 800px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+	left:-170%;
+    bottom: 125%;
+    margin-left: -70px;
+	text-shadow: none;
+}
+
+.popup2 .popuptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+	text-shadow: none;
+}
+
+.popup2 .show2 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.popup2:hover
+{
+	background-color:#EFF1F3;
+    color: black;
+    text-shadow: 0 0 5px yellow,
+                 0 0 10px yellow,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+
+
+.popup3 {
+    display: inline-block;
+	background:beige;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	left: 49%;
+    margin-left: 5px;
+	bottom: 40px;
+	position: absolute;
+	font-size: 20px;
+}
+
+.popup3 .popuptext3 {
+    visibility: hidden;
+    width: 650px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+	left:-135%;
+	text-shadow: none;
+}
+
+.popup3 .popuptext3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+	text-shadow: none;
+}
+
+.popup3 .show3 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+ .popup3:hover
+{
+	background-color:#EFF1F3;
+    color: black;
+    text-shadow: 0 0 5px yellow,
+                 0 0 10px yellow,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+
+
+.popup4 {
+    display: inline-block;
+	background:beige;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	left: 50%;
+    margin-left: 167px;
+	bottom: 40px;
+	position: absolute;
+	font-size: 20px;
+}
+
+.popup4 .popuptext4 {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -100px;
+	text-shadow: none;
+}
+
+.popup4 .popuptext4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+	text-shadow: none;
+}
+
+.popup4 .show4 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+ .popup4:hover
+{
+	background-color:#EFF1F3;
+    color: black;
+    text-shadow: 0 0 5px yellow,
+                 0 0 10px yellow,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px yellow,
+                 0 0 90px yellow,
+                 0 0 120px yellow,
+                 0 0 160px yellow;
+}
+
+
+legend{
+	background-color:white;
+}
+
+.rating {
+    float:left;
+	margin-top:51.5%;
+	margin-left:80%;
+	background-color:white;
+}
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+
+
+
+
+
+
+
+/* autor  */
+
+.autor {
+	display: block;
+	width: 900px;
+	height: auto;
+	margin-left:14%;
+}
+.autcon {
+	position:relative;
+}
+.autbox:hover {
+	opacity:1;
+}
+.aut {
+	padding-top: 50px;
+	padding-left:5px;
+}
+.autbox {
+	margin-left:14%;
+	color:white;
+	width: 900px;
+	height: 670px;;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	border-radius:5px;
+	background-color: rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+	box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+
+
+
+
+
+/* Figuren */
+
+.flip-container {
+	perspective: 1000px;
+	float: left;
+	margin-right:6%;
+	margin-left:4%;
+}
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+	background-color:white;
+	
+}
+
+
+.flip-container2 {
+	perspective: 1000px;
+	float: left;
+	margin-right:5%;
+}
+
+	.flip-container2:hover .flipper2, .flip-container2.hover .flipper2 {
+		transform: rotateX(180deg);
+	}
+
+.flip-container2, .front2, .back2 {
+	width: 320px;
+	height: 480px;
+}
+
+
+
+.container {
+position:relative;
+overflow:hidden;
+float:left;
+margin-right:4%;
+}
+
+.container .textbox {
+width:350px;
+height:580px;
+position:absolute;
+top:0;
+left:0;
+margin-top:-580px;
+border-radius:5px;
+background-color: rgba(0,0,0,0.75);
+background:white;
+}
+
+.container:hover .textbox {
+margin-top:0;
+}
+
+.text {
+padding-top: 50px;
+padding-left: 50px;
+}
+
+.textbox {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+
+.flip-container3 {
+	perspective: 1000px;
+	float: left;
+	margin-right:5%;
+}
+	.flip-container3:hover .flipper3, .flip-container3.hover .flipper3 {
+		transform: rotateY(-180deg);
+	}
+
+.flip-container3, .front3, .back3 {
+	width: 320px;
+	height: 480px;
+}
+
+.flipper3 {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front3, .back3 {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front3 {
+	z-index: 2;
+
+	transform: rotateY(0deg);
+}
+
+.back3 {
+	transform: rotateY(-180deg);
+	background-color:white;
+	
+}
+
+figcaption {
+  padding: 10px;
+  background-color:white;
+  text-align: center;
+}
+
+center-wrap {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 200px;
+}
+
+
+.box {
+  width: 40%;
+  margin-top:52%;
+  margin-left:25%;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button6 {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+   background: green;
+}
+
+.button6:hover {
+  background: #06D85F;
+}
+
+.overlay {
+
+  position: fixed;
+  width:101%;
+  height:101%;
+  margin-top:-71%;
+  margin-left:-10px;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup6 {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup6 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup6 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup6 .close:hover {
+  color: #06D85F;
+}
+
+.popup6 .content {
+  max-height: 80%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+/* Handlung */
+
+.parallax {
+    background-image: url("paralax.jpg");
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#han {
+    background-color:#E0F8F7;
+	 background-image: none;
+} 
+
+#par{
+    background-image: url("par.jpg");
+	opacity: 0.5;
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#par1{
+    background-image: url("par1.jpg");
+	opacity: 0.5;
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#par2{
+    background-image: url("par2.jpg");
+	opacity: 0.5;
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#par3{
+    background-image: url("par3.jpg");
+	opacity: 0.5;
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#par4{
+    background-image: url("par4.jpg");
+	opacity: 0.5;
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* back button */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,300");
+
+.prec{
+  background-color: #1E90FF;
+  display: inline-block;
+  padding: 6px 20px 6px 16px;
+  border: 1px solid #00FFFF;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+  border-radius: 3px;
+  color: #F5F5F5;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 0px;
+  text-decoration: none;
+  position: relative;
+}
+
+.prec:before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: 	#1E90FF;
+  left: -6px;
+  top: -9px;
+  border-radius: 4px;
+  -webkit-transform: rotate(135deg);
+  clip: rect(26px, 50px, 50px, 27px);
+  box-shadow: inset 0px -1px 0 #00FFFF, inset -1px 0px 0 #00FFFF, inset 0px -2px 0 rgba(255,255,255, .2);
+}
+
+.prec:hover{
+  background: #AFEEEE;
+  color:black;
+}
+
+.prec:hover:before{
+  background: #AFEEEE;
+  color:black;
+}
+
+.prec:active{
+  background: #FAEBD7;
+}
+
+.prec:active:before{
+  background: #FAEBD7;
+}
+
+

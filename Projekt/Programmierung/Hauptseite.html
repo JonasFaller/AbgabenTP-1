@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<link href="webseite.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<link rel="icon" type="icon/png" href="icon.png">
+		<title>East of Eden</title>
+		
+		<script>
+		function myFunction() {
+		var popup = document.getElementById("myPopup");
+		popup.classList.toggle("show");
+		}
+		
+		function myFunction2() {
+		var popup2 = document.getElementById("myPopup2");
+		popup2.classList.toggle("show2");
+		}
+		
+		function myFunction3() {
+		var popup3 = document.getElementById("myPopup3");
+		popup3.classList.toggle("show3");
+		}
+		
+		function myFunction4() {
+		var popup4 = document.getElementById("myPopup4");
+		popup4.classList.toggle("show4");
+		}
+		
+		</script>
+	</head>
+	<body>
+		<img id="buch" src="buch.jpg">
+		<button class="button" id="button1" onClick="self.location.href='autor.html'"><span>AUTHOR</span></button>
+		<button class="button" id="button2" onClick="self.location.href='handlung.html'"><span>ACTION</span></button>
+		<input type="button" value="CHARACTERS" id="button3" onClick="self.location.href='personen.html'">
+		
+		<div class="popup" onclick="myFunction()">---GENRE---
+			<span class="popuptext" id="myPopup">novel, fiction, romance novel, historical fiction<br><br>September 1952</span>
+		</div>
+		
+		<div class="popup2" onclick="myFunction2()">-----RATINGS-----
+			<span class="popuptext2" id="myPopup2">A novel planned on the grandest possible scale.... One 
+				of those occasions when a writer has aimed high and then summoned every ounce of energy, talent, 
+				seriousness, and passion of which he was capable.... It is an entirely interesting and impressive book.
+				<br>~New York Herald Tribune<br><br><br>Frank rated:<br><br>
+				This book is mind blowing. It is John Steinbeck at his sharpest. He said that every author really only has one "book," 
+				and that all of his books leading up to East of Eden were just practice--Eden would be his book.<br><br><br>
+				umang rated:<br><br>This is a long, long sermon masquerading as a novel. Its aim seems clear- to be the great American novel. 
+				In spite of, or maybe because of this overreach, it is completely unsatisfying. The characters are mere symbols. Most of the 
+				themes pertain to the characters’ moral dilemmas, but it is difficult to be drawn into these since the characters lack 
+				any real complexity.<br><br><br>My opinion:<br><br>For me the book was very interesting. You could build a good relationship to the character, 
+				because John Steinbeck described them very well! You also got a good image from the place where it plays.<br>I don’t know the story from Cain and 
+				Abel, so I don’t can say anything about this; how it refers to this book.<br>
+				All together I could recommend it to other people.
+			</span>
+		</div>
+		
+		<div class="popup3" onclick="myFunction3()">----RESOURCES------
+			<span class="popuptext3" id="myPopup3">
+			<a href="http://booksatruestory.com/2013/10/03/my-google-diary-for-east-of-eden/">http://booksatruestory.com/2013/10/03/my-google-diary-for-east-of-eden/</a>
+			<a href="http://booksatruestory.com/2013/09/05/book-review-east-eden-john-steinbeck/">http://booksatruestory.com/2013/09/05/book-review-east-eden-john-steinbeck/</a>
+			<a href="https://eli.thegreenplace.net/2008/12/09/book-review-east-of-eden-by-john-steinbeck">https://eli.thegreenplace.net/2008/12/09/book-review-east-of-eden-by-john-steinbeck</a>
+			<a href="https://en.wikipedia.org/wiki/East_of_Eden_(novel)">https://en.wikipedia.org/wiki/East_of_Eden_(novel)</a>
+			<a href="https://en.wikipedia.org/wiki/John_Steinbeck">https://en.wikipedia.org/wiki/John_Steinbeck</a>
+			<a href="https://www.nobelprize.org/nobel_prizes/literature/laureates/1962/steinbeck-bio.html">https://www.nobelprize.org/nobel_prizes/literature/laureates/1962/steinbeck-bio.html</a>
+			<a href="http://sits.sjsu.edu/curriculum-resources/east-of-eden/character-census/index.html">http://sits.sjsu.edu/curriculum-resources/east-of-eden/character-census/index.html</a>
+			<a href="https://www.publishersweekly.com/pw/by-topic/industry-news/tip-sheet/article/61688-the-13-best-john-steinbeck-books.html">https://www.publishersweekly.com/pw/by-topic/industry-news/tip-sheet/article/61688-the-13-best-john-steinbeck-books.html</a>
+			<br><br>Alternative deutsche Webseite:<br>
+			<a href="http://www.graefinnen.ch/wp/?p=31">http://www.graefinnen.ch/wp/?p=31<a>
+
+			</span>
+		</div>
+		
+		<div class="popup4" onclick="myFunction4()">--HELP---
+			<span class="popuptext4" id="myPopup4">You can see the cover from the book. If you go on the book you just can see that there appears a word. 
+			On this word you can click and you get to a new site. The book is divided in three parts: Author, action and characters. At the bottom from the book 
+			you see four other words. You can also click on them. (But you just found it :D)</span>
+		</div>
+			
+		<fieldset class="rating">
+			<legend>Please rate:</legend>
+			<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+			<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+			<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+			<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+			<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+		</fieldset>
+		
+	</body>
+</html>
